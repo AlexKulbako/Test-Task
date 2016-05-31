@@ -1,0 +1,58 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="MainModule">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container" ng-controller="MainCtrl">
+        <div class="row">
+            <div class="col-md-6" >
+                <table class="table table-striped" ng-if="!isUpper">
+                    <thead>
+                        <tr>
+                            <th>Less 10mb</th>
+                            <th>10mb-50mb</th>
+                            <th>More 100mb</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{count.Less}}</td>
+                            <td>{{count.Middle}}</td>
+                            <td>{{count.More}}</td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+
+                <ul ng-if="isUpper" class="drive">
+                    <li ng-repeat="drive in drives"><a href="" ng-click="GetData(drive)">{{drive}}</a></li>
+                </ul>
+
+                <ul ng-if="!isUpper">
+                    <li><a href="" ng-click="IsUp(parent)">...</a></li>
+                    <li ng-repeat="dir in dirs"> <a href="" ng-click="GetData(dir.FullPath)">{{dir.DirectoryName}}</a></li>
+                    <li ng-repeat="file in files">{{file.FileName}}</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/Angular/angular.js"></script>
+    <script src="~/Scripts/Angular/Modules/MainModule.js"></script>
+    <script src="~/Scripts/Angular/Services/FileSysService.js"></script>
+    <script src="~/Scripts/Angular/Controllers/MainCtrl.js"></script>
+</body>
+
+</html>

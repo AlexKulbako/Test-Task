@@ -1,0 +1,5 @@
+c:\Users\alex-pc\documents\visual studio 2015\Projects\TestTask\ProjectCore\bin\Debug\ProjectCore.dll
+c:\Users\alex-pc\documents\visual studio 2015\Projects\TestTask\ProjectCore\bin\Debug\ProjectCore.pdb
+c:\Users\alex-pc\documents\visual studio 2015\Projects\TestTask\ProjectCore\obj\Debug\ProjectCore.csprojResolveAssemblyReference.cache
+c:\Users\alex-pc\documents\visual studio 2015\Projects\TestTask\ProjectCore\obj\Debug\ProjectCore.dll
+c:\Users\alex-pc\documents\visual studio 2015\Projects\TestTask\ProjectCore\obj\Debug\ProjectCore.pdb
